@@ -110,7 +110,7 @@
                 "name": "Ocean Shore: Bottom",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Ocean Shore: Bottom"
+                        "$get_access_to_loc|Ocean Shore Bottom"
                     ]
                 ],
                 "sections": [
@@ -132,11 +132,11 @@
                     }
                 ]
             },
-            {
+            { 
                 "name": "Ocean Shore: Top",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Ocean Shore: Top"
+                        "$get_access_to_loc|Ocean Shore Top"
                     ]
                 ],
                 "sections": [
