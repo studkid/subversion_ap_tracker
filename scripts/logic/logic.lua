@@ -87,15 +87,15 @@ function canFly()
         gravity(),
         wor({
             space(),
-            0 -- Tricks.infinite_bomb_jump
+            infinite_bomb_jump()
         })
     })
 end
 
 function darkRoom()
     return wor({
-        darkvisor,
-        0 -- Tricks.dark_medium
+        darkvisor(),
+        dark_medium()
     })
 end
 
@@ -113,7 +113,7 @@ end
 
 function missileBarrier()
     return wor({
-        missileDamage,
+        missileDamage(),
         wand({
             charge(),
             hyper(),
@@ -121,18 +121,22 @@ function missileBarrier()
     })
 end
 
--- Tricks (NYI)
-function underwaterSuperSink()
+-- Boss Kill Logic
+function kraid()
     return wand({
-        0, -- Tricks.super_sink_hard
+        gravity(),
+        missileDamage(),
         wor({
-            0, --Tricks.patience
-            xray(),
-            0, --Tricks.movement_zoast
-        }),
-        0 -- Placeholder for if/when this trick is added to logic.  Currently is forced to False
+            aqua(),
+            wand({
+                sbj_underwater_w_hjb(),
+                wor({
+                    movement_zoast()m
+                })
+            })
+
+        })
     })
-end
 
 -- Early shortcuts
 function cisternAccessTunnel()
@@ -191,13 +195,13 @@ function oceanShoreTop()
         gravity(),
         wor({
             wand({
-                0, -- Tricks.movement_moderate
-                0  -- Tricks.wall_jump_delayed
+                movement_moderate(),
+                wall_jump_delayed()
             }),
             canFly(),
             hijump(),
             wand({
-                0, -- Tricks.wall_jump_precise
+                Tricks.wall_jump_precise(),
                 ice()
             }),
             speed()
@@ -212,7 +216,7 @@ function sedimentTunnel()
         gravity(),
         wor({
             speedball(),
-            0 -- Tricks.movement_zoast
+            Tricks.movement_zoast()
         })
     })
 end
@@ -224,11 +228,11 @@ function lowerLowerToSubCrevice()
         wor({
             aqua(),
             wor({
-                hijump,
-                0 -- Tricks.crouch_precise
+                hijump(),
+                crouch_precise()
             }),
-            0, -- Tricks.sbj_underwater_no_hjb
-            0  -- Tricks.freeze_hard
+            sbj_underwater_no_hjb(),
+            freeze_hard()
         }),
         pinkDoor(),
         wor({
@@ -236,12 +240,12 @@ function lowerLowerToSubCrevice()
             wand({
                 hijump(),
                 wor({
-                    0, -- Tricks.uwu_2_tile
+                    uwu_2_tile(),
                     wand({
                         super,
                         wor({
-                            0, -- Tricks.freeze_hard
-                            0, -- Tricks.sbj_underwater_w_hjb
+                            freeze_hard(),
+                            sbj_underwater_w_hjb()
                         })
                     })
                 })
@@ -260,8 +264,8 @@ function subCreviceToSedFloor()
             aqua(),
             wand({
                 hijump(),
-                0, -- Tricks.crouch_or_downgrab
-                0  -- Tricks.movement_moderate
+                crouch_or_downgrab(),
+                movement_moderate()
             })
         })
     })
@@ -287,11 +291,11 @@ function canyonToGreenMoon()
                 hijump(),
                 wor({
                     wand({
-                        0, -- Tricks.uwu_2_tile
-                        0  -- Tricks.crouch_precise
+                        uwu_2_tile(),
+                        crouch_precise()
                     }),
-                    0, -- Tricks.freeze_hard
-                    0  -- Tricks.sbj_underwater_w_hjb
+                    freeze_hard(),
+                    sbj_underwater_w_hjb()
                 })
             })
         })
@@ -315,7 +319,7 @@ function shaftToGreenMoon()
                 wor({
                     aqua(),
                     hijump(),
-                    0 -- Tricks.sbj_underwater_no_hjb
+                    sbj_underwater_no_hjb()
                 })
             })
         })
@@ -329,7 +333,7 @@ function shaftToLowerLower()
         wor({
             aqua(),
             hijump(),
-            0 -- Tricks.sbj_underwater_no_hjb
+            sbj_underwater_no_hjb()
         }), 
         pinkDoor(),
         morph(),
@@ -362,7 +366,7 @@ function shaftToLowerLower()
             morph(),
             aqua(),
             speed(),
-            0, -- Tricks.super_sink_easy
+            super_sink_easy(),
             wor({
                 speed(),
                 can_bomb(1)
@@ -380,7 +384,7 @@ function eddy()
             wand({
                 aqua(),
                 bombs(),
-                0 -- Tricks.movement_zoast
+                movement_zoast()
             })
         }),
         darkRoom()
@@ -395,11 +399,11 @@ function benthic()
         wor({
             aqua(),
             hijump(),
-            0, -- Tricks.movement_moderate
+            movement_moderate(),
             wor({
-                0, -- Tricks.crouch_precise
-                0, -- Tricks.sbj_underwater_w_hjb
-                0  -- Tricks.uwu_2_tile
+                crouch_precise(),
+                sbj_underwater_w_hjb(),
+                uwu_2_tile()
             })
         }),
         darkRoom()
@@ -415,7 +419,7 @@ function turbidToSedFloor()
             wor({
                 wand(
                     hijump(),
-                    0 -- Tricks.movement_moderate
+                    movement_moderate()
                 ),
                 wand({
                     super(),
@@ -440,7 +444,7 @@ function GreenMoonDown()
     return wor({
         super(),
         wand({
-            0, -- Tricks.moonfall_clip
+            moonfall_clip(),
             gravity(),
             wor({
                 aqua(),
@@ -473,7 +477,7 @@ function shaftToSubmarineNest()
                 aqua(),
                 wor({
                     morph(),
-                    0, -- Tricks.gravity_jump
+                    gravity_jump(),
                     ice(),
                     space()
                 })
@@ -482,11 +486,271 @@ function shaftToSubmarineNest()
                 hijump(),
                 wor({
                     ice(),
-                    0, -- Tricks.crouch_or_downgrab
-                    0  -- tricks.sbj_underwater_w_hjb
+                    crouch_or_downgrab, 
+                    sbj_underwater_w_hjb 
                 })
             }),
-            0 -- Tricks.sbj_underwater_no_hjb
+            sbj_underwater_no_hjb
         })
+    })
+end
+
+-- Tricks (NYI)
+function infinite_bomb_jump()
+    return wand({
+        morph(),
+        bomb(),
+        0
+    })
+end
+
+function sbj_underwater_no_hjb()
+    return wand({
+        morph(),
+        speedball(),
+        0
+    })
+end
+
+function sbj_underwater_w_hjb()
+    return wand({
+        morph(),
+        speedball(),
+        hijump(),
+        0
+    })
+end 
+
+function sbj_no_hjb()
+    return wand({
+        morph(),
+        speedball(),
+        0
+    })
+end
+
+function sbj_w_hjb()
+    return wand({
+        morph(),
+        speedball(),
+        hijump(),
+        0
+    })
+end 
+
+function sbj_wall()
+    return wand({
+        morph(),
+        speedball(),
+        0
+    })
+end
+
+function uwu_2_tile()
+    return 0
+end
+
+function uwu_2_tile_surface()
+    return 0 
+end
+
+function gravity_jump()
+    return wand({
+        gravity(),
+        0
+    })
+end
+
+function hell_run_hard()
+    return 0
+end
+
+function hell_run_medium()
+    return 0
+end
+
+function hell_run_easy()
+    return 0
+end
+
+function movement_moderate()
+    return 0
+end
+
+function movement_zoast()
+    return 0
+end
+
+function wall_jump_delayed()
+    return 0
+end
+
+function wall_jump_precise()
+    return 0
+end
+
+function crumble_jump()
+    return 0
+end
+
+function mockball_hard()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function morphless_tunnel_crawl()
+    return 0
+end
+
+function morph_jump_3_tile()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function morph_jump_4_tile()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function morph_jump_3_tile_up_1()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function morph_jump_3_tile_water()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function crouch_or_downgrab()
+    return 0
+end
+
+function crouch_precise()
+    return 0
+end
+
+function dark_easy()
+    return 0
+end
+
+function dark_medium()
+    return 0
+end
+
+function dark_hard()
+    return 0
+end
+
+function freeze_hard()
+    return wand({
+        ice(),
+        0
+    })
+end
+
+function wave_gate_glitch()
+    return 0
+end
+
+function ggg()
+    return 0
+end
+
+function clip_crouch()
+    return 0
+end
+
+function short_charge_2()
+    return wand({
+        speed(),
+        0
+    })
+end
+
+function short_charge_3()
+    return wand({
+        speed(),
+        0
+    })
+end
+
+function short_charge_4()
+    return wand({
+        speed(),
+        0
+    })
+end
+
+function xray_climb()
+    return wand({
+        xray(),
+        0
+    })
+end
+
+function ice_clip()
+    return wand({
+        ice(),
+        0
+    })
+end
+
+function moonfall_clip()
+    return 0
+end
+
+function super_sink_easy()
+    return wand({
+        gravity(),
+        0
+    })
+end
+
+function super_sink_hard()
+    return wand({
+        gravity(),
+        morph(),
+        0
+    })
+end
+
+function patience()
+    return 0
+end
+
+function searing_gate_tricks()
+    return wand({
+        morph(),
+        0
+    })
+end
+
+function spazer_into_lower_pirate_lab()
+    return wand({
+        spazer(),
+        0
+    })
+end
+
+function underwaterSuperSink()
+    return wand({
+        super_sink_hard()
+        wor({
+            patience(),
+            xray(),
+            movement_zoast()
+        }),
+        0 -- Placeholder for if/when this trick is added to logic.  Currently is forced to False
     })
 end

@@ -33,31 +33,31 @@ CLEAN_REGIONS = {
                     cisternAccessTunnel(),
                 })
             end,
+            ["RuinedConcourseTR"] = function()
+                return wand({
+                    gravity(),
+                    pinkDoor(),
+                    missileBarrier(),
+                    cisternAccessTunnel(),
+                })
+            end,
+            ["SporeFieldBR"] = function()
+                return wand({
+                    gravity(),
+                    pinkDoor(),
+                    missileBarrier(),
+                    shootThroughWalls(),
+                    sporeFieldEntrance()
+                })
+            end,
+            ["OceanShoreR"] = function()
+                return 1
+            end
         },
-        ["RuinedConcourseTR"] = function()
-            return wand({
-                gravity(),
-                pinkDoor(),
-                missileBarrier(),
-                cisternAccessTunnel(),
-            })
-        end,
-        ["SporeFieldBR"] = function()
-            return wand({
-                gravity(),
-                pinkDoor(),
-                missileBarrier(),
-                shootThroughWalls(),
-                sporeFieldEntrance()
-            })
-        end,
-        ["OceanShoreR"] = function()
-            return 1
-        end
     },
     ["CraterR"] = {
         exits = {
-            ["CraterR"] = function()
+            ["SunkenNestL"] = function()
                 return wand({ 
                     gravity(), 
                     powerbomb(),

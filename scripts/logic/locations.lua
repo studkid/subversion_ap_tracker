@@ -60,12 +60,45 @@ LOCATIONS = {
             return has_access_to('OceanShoreR')
         end
     },
-    ["Ocean Shore: Top"] = {
+    ["Ocean Shore Top"] = {
         access_from = function()
-            return has_access_to("OcreanShoreR")
+            return has_access_to("OceanShoreR")
         end,
         available = function()
-            oceanShoreTop()
+            return oceanShoreTop()
+        end
+    },
+    ["Sandy Cache"] = {
+        access_from = function()
+            return has_access_to("OceanShoreR")
+        end,
+        available = function()
+            return shaftToGreenMoon()
+        end
+    },
+    ["Submarine Nest"] = {
+        access_from = function()
+            return has_access_to("OceanShoreR")
+        end,
+        available = function()
+            return wand({
+                gravity(),
+                shaftToGreenMoon(),
+                shaftToSubmarineNest()
+            })
+        end
+    },
+    ["Shrine Of the Penumbra"] = {
+        access_from = function()
+            return has_access_to("OceanShoreR")
+        end,
+        available = function()
+            return wand({
+                gravity(),
+                missileDamage(),
+                pinkDoor(),
+                
+            })
         end
     }
 }
