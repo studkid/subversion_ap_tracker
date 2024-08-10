@@ -88,7 +88,7 @@ LOCATIONS = {
             })
         end
     },
-    ["Shrine Of the Penumbra"] = {
+    ["Shrine Of The Penumbra"] = {
         access_from = function()
             return has_access_to("OceanShoreR")
         end,
@@ -97,7 +97,134 @@ LOCATIONS = {
                 gravity(),
                 missileDamage(),
                 pinkDoor(),
-                
+                kraid(),
+                wor({
+                    wand({
+                        aqua(),
+                        wor({
+                            canFly(),
+                            hijump(),
+                            gravity_jump(),
+                            short_charge_2(),
+                            sbj_no_hjb()
+                        })
+                    }),
+                    sbj_underwater_w_hjb()
+                }),
+                wor({
+                    wand({
+                        can_bomb(1),
+                        darkvisor()
+                    }),
+                    can_use_pbs(2),
+                    wand({
+                        darkvisor(),
+                        morph(),
+                        wor({
+                            wand({
+                                shootThroughWalls(),
+                                wor({
+                                    morph_jump_4_tile(),
+                                    speedball()
+                                })
+                            }),
+                            wand({
+                                screw(),
+                                speedball(),
+                                bonkCeilingSuperSink()
+                            })
+                        })
+                    })
+                })
+            })
+        end
+    },
+    ["Sandy Burrow Top"] = {
+        access_from = function()
+            return has_access_to("OceanShoreR")
+        end,
+        available = function()
+            return wand({
+                morph(),
+                gravity(),
+                wor({
+                    aqua(),
+                    wand({
+                        hijump(),
+                        movement_zoast()
+                    }),
+                    sbj_underwater_w_hjb()
+                }),
+                wor({
+                    wand({
+                        aqud(),
+                        wor({
+                            screw(),
+                            wand({
+                                can_bomb(1),
+                                movement_moderate()
+                            }),
+                            can_bomb(2)
+                        })
+                    }),
+                    wand({
+                        wor({
+                            sbj_underwater_no_hjb(),
+                            hijump()
+                        }),
+                        wor({
+                            wand({
+                                can_bomb(1),
+                                movement_zoast()
+                            }),
+                            can_bomb(2)
+                        })
+                    })
+                }),
+                wor({
+                    energy_req(150),
+                    movement_moderate()
+                })
+            })
+        end
+    },
+    ["Sandy Burrow Bottom"] = {
+        access_from = function()
+            return has_access_to("OceanShoreR")
+        end,
+        available = function()
+            return wand({
+                morph(),
+                gravity(),
+                wor({
+                    aqua(),
+                    wand({
+                        hijump(),
+                        movement_zoast()
+                    }),
+                    sbj_underwater_w_hjb()
+                }),
+                wor({
+                    speedball(),
+                    wand({
+                        aqua(),
+                        bomb()
+                    }),
+                    wand({
+                        aqua(),
+                        powerbomb()
+                    }),
+                    morph_jump_3_tile_water()
+                }),
+                wor({
+                    aqua(),
+                    sbj_underwater_w_hjb(),
+                    wand({
+                        hijump(), 
+                        ice(),
+                        freeze_hard()
+                    })
+                })
             })
         end
     }

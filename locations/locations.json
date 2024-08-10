@@ -240,7 +240,7 @@
                 "name": "Sandy Burrow: Top",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Sandy Burrow: Top"
+                        "$get_access_to_loc|Sandy Burrow Top"
                     ]
                 ],
                 "sections": [
@@ -266,7 +266,7 @@
                 "name": "Sandy Burrow: Bottom",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Sandy Burrow: Bottom"
+                        "$get_access_to_loc|Sandy Burrow Bottom"
                     ]
                 ],
                 "sections": [

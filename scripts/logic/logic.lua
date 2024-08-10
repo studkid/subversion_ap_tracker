@@ -131,12 +131,35 @@ function kraid()
             wand({
                 sbj_underwater_w_hjb(),
                 wor({
-                    movement_zoast()m
+                    movement_zoast(),
+                    hijump(),
+                    energy_req(459)
                 })
             })
-
         })
     })
+end
+
+function spore_spawn()
+    return wand({
+        wor({
+            movement_moderate(),
+            hijump(),
+            space()
+        }),
+        wor({
+            movement_moderate(),
+            energy_req(130),
+            varia(),
+            metroid(),
+            aqua()
+        }),
+        wor({
+            missileDamage(),
+            charge()
+        })
+    })
+end
 
 -- Early shortcuts
 function cisternAccessTunnel()
@@ -201,7 +224,7 @@ function oceanShoreTop()
             canFly(),
             hijump(),
             wand({
-                Tricks.wall_jump_precise(),
+                wall_jump_precise(),
                 ice()
             }),
             speed()
@@ -216,7 +239,7 @@ function sedimentTunnel()
         gravity(),
         wor({
             speedball(),
-            Tricks.movement_zoast()
+            movement_zoast()
         })
     })
 end
@@ -242,7 +265,7 @@ function lowerLowerToSubCrevice()
                 wor({
                     uwu_2_tile(),
                     wand({
-                        super,
+                        super(),
                         wor({
                             freeze_hard(),
                             sbj_underwater_w_hjb()
@@ -486,11 +509,11 @@ function shaftToSubmarineNest()
                 hijump(),
                 wor({
                     ice(),
-                    crouch_or_downgrab, 
-                    sbj_underwater_w_hjb 
+                    crouch_or_downgrab(), 
+                    sbj_underwater_w_hjb() 
                 })
             }),
-            sbj_underwater_no_hjb
+            sbj_underwater_no_hjb()
         })
     })
 end
@@ -745,12 +768,27 @@ end
 
 function underwaterSuperSink()
     return wand({
-        super_sink_hard()
+        super_sink_hard(),
         wor({
             patience(),
             xray(),
             movement_zoast()
         }),
         0 -- Placeholder for if/when this trick is added to logic.  Currently is forced to False
+    })
+end
+
+function bonkCeilingSuperSink()
+    return wand({
+        super_sink_hard(),
+        wor({
+            speedball(),
+            movement_zoast()
+        }),
+        wor({
+            patience(),
+            xray(),
+            movement_zoast()
+        })
     })
 end
