@@ -2358,5 +2358,374 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Vulnar Peaks",
+        "children": [
+            {
+                "name": "Grand Promenade",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Grand Promenade"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 770,
+                        "y": 115
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 12,
+                        "y": 52
+                    }
+                ]
+            },
+            {
+                "name": "Armory Cache 2",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Armory Cache"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 826,
+                        "y": 122
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 68,
+                        "y": 60
+                    }
+                ]
+            },
+            {
+                "name": "Armory Cache 3",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Armory Cache"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 834,
+                        "y": 122
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 76,
+                        "y": 60
+                    }
+                ]
+            },
+            {
+                "name": "Summit Landing",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Summit Landing"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 890,
+                        "y": 115
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 132,
+                        "y": 52
+                    }
+                ]
+            },
+            {
+                "name": "Antechamber",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Antechamber"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 850,
+                        "y": 115
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 92,
+                        "y": 52
+                    }
+                ]
+            },
+            {
+                "name": "Drawing Room",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Drawing Room"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 850,
+                        "y": 99
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 92,
+                        "y": 36
+                    }
+                ]
+            },
+            {
+                "name": "Sitting Room",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Sitting Room"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 803,
+                        "y": 99
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 44,
+                        "y": 36
+                    }
+                ]
+            },
+            {
+                "name": "Reliquary Access",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Reliquary Access"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 795,
+                        "y": 75
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 36,
+                        "y": 12
+                    }
+                ]
+            },
+            {
+                "name": "Syzygy Observatorium",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Syzygy Observatorium"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "Shots: 3 2 3 1 1",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 827,
+                        "y": 67
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 68,
+                        "y": 4
+                    }
+                ]
+            },
+            {
+                "name": "Icy Flow",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Icy Flow"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 922,
+                        "y": 131
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 164,
+                        "y": 68
+                    }
+                ]
+            },
+            {
+                "name": "Glacier's Reach",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Glacier's Reach"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 906,
+                        "y": 115
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 148,
+                        "y": 52
+                    }
+                ]
+            },
+            {
+                "name": "Icy Cave",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Icy Cave"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 922,
+                        "y": 138
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 164,
+                        "y": 76
+                    }
+                ]
+            },
+            {
+                "name": "Snow Cache",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Snow Cache"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 930,
+                        "y": 147
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 172,
+                        "y": 84
+                    }
+                ]
+            },
+            {
+                "name": "Frozen Lake Wall",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Frozen Lake Wall"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 986,
+                        "y": 147
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 228,
+                        "y": 84
+                    }
+                ]
+            }
+        ]
     }
 ]
