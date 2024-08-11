@@ -303,5 +303,11 @@
         "type": "consumable",
         "img": "images/items/torizo.png",
         "codes": "lava"
+    },
+    {
+        "name": "UAT Ping",
+        "type": "toggle",
+        "img": "",
+        "codes": "ping"
     }
 ]

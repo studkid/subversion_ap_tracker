@@ -8,7 +8,8 @@
         "standard": {
             "display_name": "Map Tracker",
             "flags": [
-                "ap"
+                "ap",
+                "uat"
             ]
         }
 	}

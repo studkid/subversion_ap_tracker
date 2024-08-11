@@ -1,5 +1,5 @@
 DEBUG_MODE = false
-ENABLE_DEBUG_LOG = true or DEBUG_MODE
+ENABLE_DEBUG_LOG = false or DEBUG_MODE
 
 print("-- SM AP Tracker --")
 print("Loaded tracker : ", Tracker.ActiveVariantUID)
@@ -9,12 +9,12 @@ end
 
 
 -- Logic
-ScriptHost:LoadScript("scripts/logic/utils.lua")
-ScriptHost:LoadScript("scripts/logic/items.lua")
-ScriptHost:LoadScript("scripts/logic/areas.lua")
-ScriptHost:LoadScript("scripts/logic/doors.lua")
-ScriptHost:LoadScript("scripts/logic/locations.lua")
-ScriptHost:LoadScript("scripts/logic/logic.lua")
+-- ScriptHost:LoadScript("scripts/logic/utils.lua")
+-- ScriptHost:LoadScript("scripts/logic/items.lua")
+-- ScriptHost:LoadScript("scripts/logic/areas.lua")
+-- ScriptHost:LoadScript("scripts/logic/doors.lua")
+-- ScriptHost:LoadScript("scripts/logic/locations.lua")
+-- ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Custom Items
 ScriptHost:LoadScript("scripts/custom_items/class.lua")

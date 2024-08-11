@@ -32,5 +32,7 @@ CUR_INDEX = -1
 SLOT_DATA = nil
 
 ScriptHost:LoadScript("scripts/autotracking/archipelago.lua")
-ScriptHost:LoadScript("scripts/autotracking/snes.lua")
 
+if ScriptHost.AddVariableWatch then
+    ScriptHost:LoadScript("scripts/autotracking/uat.lua")
+end
