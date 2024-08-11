@@ -16,7 +16,8 @@ local updateLocations = function(store, vars)
 end
 
 function get_access_to_loc(name)
-    for _, loc in ipairs(locations) do
+    for _, loc in ipairs(locations) do 
+        loc = loc:gsub(":", "")
         if loc == name then
             return 1
         end

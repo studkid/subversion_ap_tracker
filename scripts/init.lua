@@ -1,7 +1,7 @@
 DEBUG_MODE = false
 ENABLE_DEBUG_LOG = false or DEBUG_MODE
 
-print("-- SM AP Tracker --")
+print("-- SM Subversion AP Tracker --")
 print("Loaded tracker : ", Tracker.ActiveVariantUID)
 if ENABLE_DEBUG_LOG then
     print("Debug logging is enabled!")
@@ -12,7 +12,6 @@ end
 -- ScriptHost:LoadScript("scripts/logic/utils.lua")
 -- ScriptHost:LoadScript("scripts/logic/items.lua")
 -- ScriptHost:LoadScript("scripts/logic/areas.lua")
--- ScriptHost:LoadScript("scripts/logic/doors.lua")
 -- ScriptHost:LoadScript("scripts/logic/locations.lua")
 -- ScriptHost:LoadScript("scripts/logic/logic.lua")
 

@@ -635,7 +635,7 @@
                 "name": "Warrior Shrine: Bottom",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Warrior Shrine: Bottom"
+                        "$get_access_to_loc|Warrior Shrine Bottom"
                     ]
                 ],
                 "sections": [
@@ -661,7 +661,7 @@
                 "name": "Warrior Shrine: Top",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Warrior Shrine: Top"
+                        "$get_access_to_loc|Warrior Shrine Top"
                     ]
                 ],
                 "sections": [
@@ -687,7 +687,7 @@
                 "name": "Warrior Shrine: Middle",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Warrior Shrine: Middle"
+                        "$get_access_to_loc|Warrior Shrine Middle"
                     ]
                 ],
                 "sections": [
@@ -895,7 +895,7 @@
                 "name": "Archives: Front",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Archives: Front"
+                        "$get_access_to_loc|Archives Front"
                     ]
                 ],
                 "sections": [
@@ -921,7 +921,7 @@
                 "name": "Archives: Back",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Archives: Back"
+                        "$get_access_to_loc|Archives Back"
                     ]
                 ],
                 "sections": [
@@ -947,7 +947,7 @@
                 "name": "Sensor Maintenance: Top",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Sensor Maintenance: Top"
+                        "$get_access_to_loc|Sensor Maintenance Top"
                     ]
                 ],
                 "sections": [
@@ -973,7 +973,7 @@
                 "name": "Sensor Maintenance: Bottom",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Sensor Maintenance: Bottom"
+                        "$get_access_to_loc|Sensor Maintenance Bottom"
                     ]
                 ],
                 "sections": [
@@ -1945,7 +1945,7 @@
                 "name": "Central Corridor: Left",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Central Corridor: Left"
+                        "$get_access_to_loc|Central Corridor Left"
                     ]
                 ],
                 "sections": [
@@ -1971,7 +1971,7 @@
                 "name": "Central Corridor: Right",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Central Corridor: Right"
+                        "$get_access_to_loc|Central Corridor Right"
                     ]
                 ],
                 "sections": [
@@ -2127,7 +2127,7 @@
                 "name": "Briar: Top",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Briar: Top"
+                        "$get_access_to_loc|Briar Top"
                     ]
                 ],
                 "sections": [
@@ -2153,7 +2153,7 @@
                 "name": "Briar: Bottom",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Briar: Bottom"
+                        "$get_access_to_loc|Briar Bottom"
                     ]
                 ],
                 "sections": [
@@ -2723,6 +2723,399 @@
                         "map": "peaksmap",
                         "x": 228,
                         "y": 84
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "name": "Space Port",
+        "children": [
+            {
+                "name": "Docking Port 4",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Docking Port 4"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 946,
+                        "y": 74,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 107,
+                        "y": 75,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 706,
+                        "y": 227,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "oceaniamap",
+                        "x": 251,
+                        "y": 45,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Docking Port 3",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Docking Port 3"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1042,
+                        "y": 66,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 203,
+                        "y": 66,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 1191,
+                        "y": 219,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "lomyrmap",
+                        "x": 275,
+                        "y": 76,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Weapon Locker",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Weapon Locker"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1098,
+                        "y": 34,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 259,
+                        "y": 34,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 1234,
+                        "y": 226,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "lomyrmap",
+                        "x": 318,
+                        "y": 83,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Aft Battery",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Aft Battery"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1098,
+                        "y": 51,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 259,
+                        "y": 51,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 1234,
+                        "y": 242,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "lomyrmap",
+                        "x": 318,
+                        "y": 99,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Forward Battery",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Forward Battery"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1211,
+                        "y": 42,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 371,
+                        "y": 43,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 1339,
+                        "y": 218,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "lomyrmap",
+                        "x": 422,
+                        "y": 76,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Gantry",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Gantry"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1010,
+                        "y": 58,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 171,
+                        "y": 59,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 980,
+                        "y": 147,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 222,
+                        "y": 84,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Ready Room",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Ready Room"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 1003,
+                        "y": 42,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 163,
+                        "y": 43,
+                        "force_invisibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "fullmap",
+                        "x": 954,
+                        "y": 154,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    },
+                    {
+                        "map": "peaksmap",
+                        "x": 191,
+                        "y": 91,
+                        "restrict_visibility_rules": [
+                            "crash"       
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "Torpedo Bay",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Torpedo Bay"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 867,
+                        "y": 66
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 27,
+                        "y": 67
+                    }
+                ]
+            },
+            {
+                "name": "Extract Storage",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Extract Storage"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 874,
+                        "y": 58
+                    },
+                    {
+                        "map": "spaceportmap",
+                        "x": 35,
+                        "y": 59
                     }
                 ]
             }
