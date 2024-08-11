@@ -3120,5 +3120,244 @@
                 ]
             }
         ]
+    },
+    {
+        "name": "Suzi Island",
+        "children": [
+            {
+                "name": "Suzi Island Map Station Access",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Suzi Island Map Station Access"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 170,
+                        "y": 355
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 170,
+                        "y": 178
+                    }
+                ]
+            },
+            {
+                "name": "Obstructed Vestibule",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Obstructed Vestibule"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 98,
+                        "y": 275
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 98,
+                        "y": 98
+                    }
+                ]
+            },
+            {
+                "name": "Obstructed Vestibule",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Obstructed Vestibule"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 98,
+                        "y": 275
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 98,
+                        "y": 98
+                    }
+                ]
+            },
+            {
+                "name": "Portico",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Portico"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 202,
+                        "y": 290
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 202,
+                        "y": 114
+                    }
+                ]
+            },
+            {
+                "name": "Tower Rock Lookout",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Tower Rock Lookout"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 314,
+                        "y": 250
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 314,
+                        "y": 74
+                    }
+                ]
+            },
+            {
+                "name": "Reef Nook",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Reef Nook"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 306,
+                        "y": 306
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 306,
+                        "y": 130
+                    }
+                ]
+            },
+            {
+                "name": "Saline Cache",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Saline Cache"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 234,
+                        "y": 354
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 234,
+                        "y": 178
+                    }
+                ]
+            },
+            {
+                "name": "Enervation Chamber",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Enervation Chamber"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 146,
+                        "y": 234
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 146,
+                        "y": 58
+                    }
+                ]
+            },
+            {
+                "name": "Shrine of the Animate Spark",
+                "access_rules": [
+                    [
+                        "$get_access_to_loc|Shrine of the Animate Spark"
+                    ]
+                ],
+                "sections": [
+                    {
+                        "name": "",
+                        "item_count": 1
+                    }
+                ],
+                "map_locations": [
+                    {
+                        "map": "fullmap",
+                        "x": 146,
+                        "y": 186
+                    },
+                    {
+                        "map": "suzimap",
+                        "x": 146,
+                        "y": 10
+                    }
+                ]
+            }
+        ]
     }
 ]
