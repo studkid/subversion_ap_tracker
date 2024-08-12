@@ -471,10 +471,10 @@
                 ]
             },
             {
-                "name": "Eddy Channel",
+                "name": "Eddy Channels",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Eddy Channel"
+                        "$get_access_to_loc|Eddy Channels"
                     ]
                 ],
                 "sections": [
@@ -2392,7 +2392,7 @@
                 "name": "Armory Cache 2",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Armory Cache"
+                        "$get_access_to_loc|Armory Cache 2"
                     ]
                 ],
                 "sections": [
@@ -2418,7 +2418,7 @@
                 "name": "Armory Cache 3",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Armory Cache"
+                        "$get_access_to_loc|Armory Cache 3"
                     ]
                 ],
                 "sections": [
@@ -2649,10 +2649,10 @@
                 ]
             },
             {
-                "name": "Icy Cave",
+                "name": "Ice Cave",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Icy Cave"
+                        "$get_access_to_loc|Ice Cave"
                     ]
                 ],
                 "sections": [
@@ -3125,10 +3125,10 @@
         "name": "Suzi Island",
         "children": [
             {
-                "name": "Suzi Island Map Station Access",
+                "name": "Suzi Ruins Map Station Access",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Suzi Island Map Station Access"
+                        "$get_access_to_loc|Suzi Ruins Map Station Access"
                     ]
                 ],
                 "sections": [
@@ -3151,10 +3151,10 @@
                 ]
             },
             {
-                "name": "Obstructed Vestibule",
+                "name": "Obscured Vestibule",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Obstructed Vestibule"
+                        "$get_access_to_loc|Obscured Vestibule"
                     ]
                 ],
                 "sections": [
@@ -3333,10 +3333,10 @@
                 ]
             },
             {
-                "name": "Shrine of the Animate Spark",
+                "name": "Shrine Of The Animate Spark",
                 "access_rules": [
                     [
-                        "$get_access_to_loc|Shrine of the Animate Spark"
+                        "$get_access_to_loc|Shrine Of The Animate Spark"
                     ]
                 ],
                 "sections": [
