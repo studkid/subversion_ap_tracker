@@ -3177,32 +3177,6 @@
                 ]
             },
             {
-                "name": "Obstructed Vestibule",
-                "access_rules": [
-                    [
-                        "$get_access_to_loc|Obstructed Vestibule"
-                    ]
-                ],
-                "sections": [
-                    {
-                        "name": "",
-                        "item_count": 1
-                    }
-                ],
-                "map_locations": [
-                    {
-                        "map": "fullmap",
-                        "x": 98,
-                        "y": 275
-                    },
-                    {
-                        "map": "suzimap",
-                        "x": 98,
-                        "y": 98
-                    }
-                ]
-            },
-            {
                 "name": "Portico",
                 "access_rules": [
                     [
